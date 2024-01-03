@@ -5,11 +5,12 @@ const NavBar = () => {
         <div className="title-wrapper col-xs-4">
           <h1 className="title">Recipe Finder</h1>
         </div>
-        <div className="search-wrapper">
+        <div className="search-wrapper col-xs-3">
           <input type="search" name="Search" id="search-bar"  className="search-bar"/>
+          <button type="button" className="search-btn" id="search-btn"><i className="fa fa-search"></i></button>
         </div>
         <div className="icon">
-          <h2><i className="fa fa-utensils"></i></h2>
+          <h2><i className="fa fa-utensils col-xs-4"></i></h2>
         </div>
       </nav>
     </main>
