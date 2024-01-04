@@ -1,3 +1,10 @@
+## Project overview
+
+This project here was made with the basics of HTML5, CSS3/SASS, JavaScript, Jquery, Bootstrap and React.JS.
+Here in this repository is a recipe finder which allows a user to input whatever dish that they would like the recipe for and it will then provide them with a
+set of instructions on how to replicate the dish along with the ingredients needed for that recipe.
+I had used [API Ninjas](https://api-ninjas.com/api) for this project. This is also mentioned in the website itself.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
