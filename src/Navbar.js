@@ -4,11 +4,11 @@ import $ from "jquery"
 const NavBar = () => {
 
 
-  async function getInformation() {
+  async function getInformation() { // Use async function so we are able to use the await method to force the code to pause until data is recieved
 
-    try {
-      const SEARCH_VALUE = document.getElementById('search-bar').value;
-        const API_KEY = 'USE YOUR API KEY';
+    try { // Try-catch block statement is used to check whether the input is empty or not
+      const SEARCH_VALUE = document.getElementById('search-bar').value; // Get the value of input
+        const API_KEY = 'USE YOUR API KEY'; // APIKEY 
         const API_URL = `https://api.api-ninjas.com/v1/recipe?query=${SEARCH_VALUE}` 
         const OBJ_FETCH = {
           method: 'GET',
@@ -17,11 +17,10 @@ const NavBar = () => {
     
         const RESPONSE = await fetch(API_URL, OBJ_FETCH)
         const DATA = await RESPONSE.json()
-        const INGREDIENTS = DATA[0].ingredients.replace(/[;|]+/g, "\n");
-        const INSTRUCTIONS = DATA[0].instructions.replace(/[;|]+/g, "\n")
+        const INGREDIENTS = DATA[0].ingredients.replace(/[;|]+/g, "\n"); // Gather the ingredients data from the DATA variable
+        const INSTRUCTIONS = DATA[0].instructions.replace(/[;|]+/g, "\n") // Gather the instructions data from the DATA variable
 
-      $(document).ready(function() {
-  
+      $(document).ready(function() { // Change the styling and text of selected elements to display the data retrieved
         $('.ingredients').css("padding", "10px")
         $('.ingredient-para').text(INGREDIENTS).css('fontSize', '25px').css("color", "black")
         $('.instruction').css("padding","10px")
@@ -29,7 +28,7 @@ const NavBar = () => {
   
       })
       
-    } catch (error) {
+    } catch (error) { // Will throw error and display custom message in each div to show that there was an error.
       $(document).ready(function() {
         $('.ingredients').html(`<h1>${new Error("An error has occured, likely due to search being empty")}</h1>`)
         $('.instructions').html(`<h1>${new Error("An error has occured, likely due to search being empty")}</h1>`)
