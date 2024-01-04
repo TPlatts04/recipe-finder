@@ -1,6 +1,47 @@
 .home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 93svh;
+  padding-top: 50px;
+  background: linear-gradient(to right bottom, #A75D5D, #D3756B, #F0997D, #FFC3A1);
+  border-top: 1px solid black;
 
   .home-title {
     color: black;
+    text-align: center;
+  }
+  .started {
+    color: black;
+    text-align: center;
+    margin-top: 60px;
+    text-decoration: underline;
+  }
+
+  .info-title {
+    text-align: center;
+    color: black;
+    text-decoration: underline;
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+
+  li {
+    font-size: 20px;
+    color: black;
+  }
+
+  code {
+    background-color: gray;
+    color:white;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-title {
+    font-size: 30px;
+  }
+  li, .info-title {
+    font-size: 15px !important;
   }
 }
