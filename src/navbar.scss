@@ -28,8 +28,7 @@
       display: grid;
       grid-template-columns: 1fr 50px;
       column-gap: 20px;
-      position: fixed;
-      left: 38%;
+      position: relative;
 
       .search-bar {
         position: relative;
@@ -41,6 +40,7 @@
         border-radius: 20px;
         color: rgb(0, 167, 179);
         transition: all 250ms ease-in-out;
+        padding-left: 5px;
       }
       .search-bar:focus {
         transform: scale(0.99);
@@ -74,6 +74,10 @@
       position: relative;
       top: -10px;
       color: white;
+    }
+    
+    .recipe-link {
+      color: black;
     }
   }
 }

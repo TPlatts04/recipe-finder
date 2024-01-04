@@ -23,6 +23,7 @@ const Home = () => {
           <h1 className="started">
             Let's get started! Search a food you'd like the recipe for!
           </h1>
+          <p className="note">NOTE: You have to be specific with the name</p>
         </div>
       </div>
     </main>

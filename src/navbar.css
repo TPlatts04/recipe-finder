@@ -27,8 +27,7 @@
   grid-template-columns: 1fr 50px;
   -moz-column-gap: 20px;
        column-gap: 20px;
-  position: fixed;
-  left: 38%;
+  position: relative;
 }
 .nav-wrapper .nav-container .search-wrapper .search-bar {
   position: relative;
@@ -40,6 +39,7 @@
   border-radius: 20px;
   color: rgb(0, 167, 179);
   transition: all 250ms ease-in-out;
+  padding-left: 5px;
 }
 .nav-wrapper .nav-container .search-wrapper .search-bar:focus {
   transform: scale(0.99);
@@ -73,6 +73,9 @@
   position: relative;
   top: -10px;
   color: white;
+}
+.nav-wrapper .nav-container .recipe-link {
+  color: black;
 }
 
 @media (max-width: 700px) {

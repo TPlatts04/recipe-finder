@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 93svh;
   padding-top: 50px;
+  min-height: 100svh;
   background: linear-gradient(to right bottom, #A75D5D, #D3756B, #F0997D, #FFC3A1);
   border-top: 1px solid black;
 }
@@ -31,6 +31,12 @@
 .home-page-container code {
   background-color: gray;
   color: white;
+}
+.home-page-container .note {
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 @media (max-width: 700px) {
