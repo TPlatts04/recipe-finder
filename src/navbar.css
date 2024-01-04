@@ -27,7 +27,8 @@
   grid-template-columns: 1fr 50px;
   -moz-column-gap: 20px;
        column-gap: 20px;
-  position: relative;
+  position: absolute;
+  left: 38%;
 }
 .nav-wrapper .nav-container .search-wrapper .search-bar {
   position: relative;
@@ -89,8 +90,8 @@
   }
   .search-wrapper {
     width: 50%;
-    -moz-column-gap: 10px;
-         column-gap: 10px;
+    -moz-column-gap: 5px !important;
+         column-gap: 5px !important;
   }
   .search-bar {
     height: 25px;

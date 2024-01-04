@@ -7,8 +7,8 @@ const NavBar = () => {
   async function getInformation() {
 
     try {
-        const SEARCH_VALUE = document.getElementById('search-bar').value;
-        const API_KEY = 'YOUR OWN API KEY';
+      const SEARCH_VALUE = document.getElementById('search-bar').value;
+        const API_KEY = 'USE YOUR API KEY';
         const API_URL = `https://api.api-ninjas.com/v1/recipe?query=${SEARCH_VALUE}` 
         const OBJ_FETCH = {
           method: 'GET',
@@ -20,10 +20,14 @@ const NavBar = () => {
         const INGREDIENTS = DATA[0].ingredients.replace(/[;|]+/g, "\n");
         const INSTRUCTIONS = DATA[0].instructions.replace(/[;|]+/g, "\n")
 
+      $(document).ready(function() {
+  
         $('.ingredients').css("padding", "10px")
         $('.ingredient-para').text(INGREDIENTS).css('fontSize', '25px').css("color", "black")
         $('.instruction').css("padding","10px")
         $('.instructions-para').text(INSTRUCTIONS).css('fontSize', '25px').css("color", "black")
+  
+      })
       
     } catch (error) {
       $(document).ready(function() {

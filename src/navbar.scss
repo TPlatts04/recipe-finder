@@ -28,7 +28,8 @@
       display: grid;
       grid-template-columns: 1fr 50px;
       column-gap: 20px;
-      position: relative;
+      position: absolute;
+      left: 38%;
 
       .search-bar {
         position: relative;
@@ -89,7 +90,7 @@
   }
   .search-wrapper {
     width: 50%;
-    column-gap: 10px;
+    column-gap: 5px !important;
   }
   .search-bar {
     height: 25px;
