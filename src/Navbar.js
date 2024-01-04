@@ -6,7 +6,7 @@ const NavBar = () => {
           <h1 className="title">Recipe Finder</h1>
         </div>
         <div className="search-wrapper col-xs-3">
-          <input type="search" name="Search" id="search-bar"  className="search-bar"/>
+          <input type="search" name="Search" id="search-bar"  className="search-bar" placeholder="Search Recipe..."/>
           <button type="button" className="search-btn" id="search-btn"><i className="fa fa-search"></i></button>
         </div>
         <div className="icon">

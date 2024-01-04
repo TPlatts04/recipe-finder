@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700;800;900&family=Manrope:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sora:wght@100;300;500;700&display=swap");
+* {
+  font-family: "Poppins", monospace, sans-serif;
+  margin: 0px;
+}
+
+.nav-wrapper {
+  padding: 0px;
+}
+.nav-wrapper .nav-container {
+  background: linear-gradient(to right bottom, #0E2954, #1F6E8C, #2E8A99, #84A7A1);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.nav-wrapper .nav-container .title {
+  position: relative;
+  width: 250px;
+  margin: 0px;
+  left: -25px;
+  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.9);
+  color: white;
+}
+.nav-wrapper .nav-container .search-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+}
+.nav-wrapper .nav-container .search-wrapper .search-bar {
+  position: relative;
+  left: -475px;
+  width: 200%;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+  color: rgb(0, 167, 179);
+  transition: all 250ms ease-in-out;
+}
+.nav-wrapper .nav-container .search-wrapper .search-bar:focus {
+  transform: scale(0.99);
+  outline: none;
+  caret-color: rgb(0, 150, 177);
+}
+.nav-wrapper .nav-container .search-wrapper .search-bar::-moz-placeholder {
+  color: black;
+}
+.nav-wrapper .nav-container .search-wrapper .search-bar::placeholder {
+  color: black;
+}
+.nav-wrapper .nav-container .search-wrapper .search-btn {
+  font-size: 20px;
+  height: 50px;
+  padding: 6px;
+  position: relative;
+  left: -75px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+  transition: all 250ms ease-in-out;
+  background-color: white;
+}
+.nav-wrapper .nav-container .search-wrapper .search-btn:hover {
+  transform: scale(0.95);
+  background-color: rgb(250, 140, 140);
+}
+.nav-wrapper .nav-container .icon {
+  position: relative;
+  top: -10px;
+  color: white;
+}/*# sourceMappingURL=navbar.css.map */
